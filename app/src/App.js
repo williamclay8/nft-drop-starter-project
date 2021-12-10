@@ -7,11 +7,7 @@ const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
-  // Actions
 
-  /*
-  * Declare your function
-  */
   const checkIfWalletIsConnected = async () => {
     try {
       const { solana } = window;
@@ -28,10 +24,7 @@ const App = () => {
     }
   };
 
-  /*
-   * When our component first mounts, let's check to see if we have a connected
-   * Phantom Wallet
-   */
+
   useEffect(() => {
     const onLoad = async () => {
       await checkIfWalletIsConnected();
